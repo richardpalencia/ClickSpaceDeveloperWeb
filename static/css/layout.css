@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;}
+
+/* CONFIG NAVBAR */
+.navbar ul{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 2em;
+    list-style: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 500;
+    font-size: 1em;}
+    .navbar ul li a{
+        cursor: pointer;
+        padding: .5em;
+        text-decoration: none;
+        color: #DF34CE;
+        border-radius: 10px;}
+        .navbar ul li a:hover{
+            background-color: #DF34CE;
+            border-radius: 5px;
+            color: black;
+            transition: 350ms;}
+
+.navbar{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;}
+
+/* CONFIG FOOTER */
+footer{
+    width: 100vw;
+    height: 6em;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin-top: 10em;
+    position: absolute;
+    z-index: 1;
+    background-color: black;}
+    footer .redes-sociales{
+        margin-left: auto;
+        margin-right: auto;}
+    footer .redes-sociales ul li svg {
+        width: 4em;
+        padding: 5px;
+        border-radius: 5px;
+        border-bottom: 5px solid black;
+        color: #DF34CE;}
+        footer ul li svg:hover{
+            transition: 500ms;
+            border-radius: 5px;
+            border-bottom: 5px solid #DF34CE;
+            color: #DCDCDC;}
+        footer ul li {
+            cursor: pointer;
+            display: inline-flex;
+            margin: 15px 15px;}

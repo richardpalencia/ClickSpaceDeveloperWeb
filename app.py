@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+#-*- coding: utf-8 -*-
+
 from distutils.log import debug
 from flask import Flask, render_template, url_for
 

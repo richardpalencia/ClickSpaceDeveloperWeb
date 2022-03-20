@@ -80,13 +80,15 @@ body{
         margin-left: 0%;}
 
     .secciones{
-        width: 90vw;
+        width: 70vw;
         display: block;
-        margin-left: 25%;
+        margin-left: 30%;
         margin-top: 8em;
         justify-content:center}
         .secciones .box{
             width: 50%;
+            margin-right: 0;
+            margin-left: 0;
             margin-top: 8em;}
         .secciones .box p{
             font-size: 1.5em;

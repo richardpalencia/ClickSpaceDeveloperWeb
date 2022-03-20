@@ -2,20 +2,144 @@
     padding: 0;
     margin: 0;}
 
-html{width: 100%;}
+
 
 /* Configuración general */
 body{
     background-image: url(/static/img/inicio/fondo-software.jpg);
     width: 100vw;
     height: 100%;
-    position: absolute;
-    background-size: cover;}
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed}
 
-.container:before{
-    content: "";
-    width: 100%;
-    height: 100%;
-    background-color: rgb(0, 0, 0);
-    position: absolute;
-    opacity: 0.4;}
+/* Configuración de container */
+.items{
+    width: 90vw;
+    margin-left: 5%;
+    align-items: center;}
+
+    .logo{
+        width: 100%;
+        align-items: center;}
+        .logo img{
+            width: 35%;
+            margin-left: 32%;
+            padding-top: 7%;}
+
+    .eslogan{
+        width: 40vw;
+        text-align: center;
+        font-family: 'Orbitron', sans-serif;
+        font-size: 1.5em;
+        margin-top: .5em;
+        padding-top: .3em;
+        margin-left: 26%;
+        border-top: 2px solid #FF0066;
+        color: #C1BABD;}
+
+    .secciones{
+        width: 90vw;
+        display: flex;
+        margin-top: 5em;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;}
+        .secciones .box{
+            width: 20%;}
+            .secciones .box img{
+                width: 100%;
+                height: 100%;
+                border: 2px solid #D9D8DC;
+                border-radius: 10px;
+                position: relative;
+                cursor: pointer;}
+                .secciones .box img:hover{
+                    transition: 400ms;
+                    border: 2px solid #FF0066;}
+        .secciones .box p{
+            color: #E6E2E2;
+            font-size: 1.3em;
+            margin-top: .4em;
+            font-family: 'Roboto', sans-serif;}
+
+@media screen and (max-width: 1000px) {
+    .logo{
+        width: 100%;
+        align-items: center;}
+        .logo img{
+            width: 65%;
+            margin-left: 19%;
+            padding-top: 12%;}
+
+    .eslogan{
+        width: 90vw;
+        font-size: 1.5em;
+        margin-top: .5em;
+        padding-top: .3em;
+        margin-left: 0%;}
+
+    .secciones{
+        width: 90vw;
+        display: block;
+        margin-left: 25%;
+        margin-top: 8em;
+        justify-content:center}
+        .secciones .box{
+            width: 50%;
+            margin-top: 8em;}
+        .secciones .box p{
+            font-size: 1.5em;
+            margin-top: .5em;}
+}
+
+@media screen and (max-width: 700px) {
+    /* Configuración general */
+    body{
+        background-image: url(/static/img/inicio/fondo-software.jpg);
+        width: 100vw;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-attachment: fixed}
+
+    .items{
+        width: 100vw;
+        margin-left: 5%;
+        align-items: center;}
+
+        .logo{
+            width: 100%;
+            align-items: center;}
+            .logo img{
+                width: 70%;
+                margin-left: 10%;
+                padding-top: 30%;}
+
+        .eslogan{
+            width: 90vw;
+            font-size: 1em;
+            margin-top: .5em;
+            padding-top: .5em;
+            margin-left: 0%;}
+
+        .secciones{
+            width: 90vw;
+            display: block;
+            margin-left: 0%;
+            margin-top: 7em;
+            align-items: center;
+            text-align: center;
+            justify-content: space-between;}
+            .secciones .box{
+                width: 60%;
+                margin-left: 20%;
+                margin-top: 4em;}
+                .secciones .box img:hover{
+                    transition: 400ms;
+                    border: 2px solid #FF0066;}
+            .secciones .box p{
+                font-size: 1em;
+                margin-top: .4em;
+                font-family: 'Roboto', sans-serif;}
+}

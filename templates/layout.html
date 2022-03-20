@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Click Sapace Developer</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/static/img/logo/favicon-v1.png">
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Luckiest+Guy&family=Roboto:wght@500&family=Sigmar+One&family=Titan+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
     <main class="container" >
@@ -20,7 +22,12 @@
                 <li><a href="{{ url_for('clientes') }}">Clientes</a></li>
                 <li><a href="{{ url_for('contacto') }}">Contacto</a></li>
             </ul>
+            <div class="menu">
+                <!-- MENÚ MÓVIL -->
+                <img src="/static/icon/menu.png" alt="Botón de menu">
+            </div>
         </div>
+
 
         {% block content %}
         <!-- CODE PAGE -->

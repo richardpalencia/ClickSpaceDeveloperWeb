@@ -6,8 +6,37 @@
 <link rel="stylesheet" href="/static/css/layout.css">
 
 <main class="container">
-dfsdfsdf 
-asas
+    <div class="items">
+        <div class="logo">
+            <img src="/static/img/logo/logo_claro.png" alt="Logo de Click Space Developer">
+        </div> <!-- end logo -->
+
+        <div class="eslogan">
+            <h3>Desarrollo web para tu negocio</h3>
+        </div> <!-- end eslogan -->
+
+        <div class="secciones">
+            <div class="box" id="servicios">
+                <a href="{{ url_for('servicios') }}"><img src="/static/img/inicio/servicios.jpg" alt="Imagen de la sección de servicios"></a>
+                <p>Servicios de desarrollo para tu negocio</p>
+            </div> <!-- end servicios -->
+
+            <div class="box" id="necesidad">
+                <a href="{{ url_for('identifica') }}"><img src="/static/img/inicio/construct.jpg" alt="Imagen de la sección de te llevamos de la mano con tu proyecto"></a>
+                <p>Te llevamos de la mano para hacer tu idea realidad.</p>
+            </div> <!-- end necesidad -->
+
+            <div class="box" id="clientes">
+                <a href="{{ url_for('clientes') }}"><img src="/static/img/inicio/work.jpg" alt="Imagen de la sección de clientes"></a>
+                <p>Conoce los proyectos en los que hemos trabajado.</p>
+            </div> <!-- end clientes -->
+
+            <div class="box" id="contacto">
+                <a href="{{ url_for('contacto') }}"><img src="/static/img/inicio/contact.jpg" alt="Imagen de la sección de contactos"></a>
+                <p>¡contáctanos! te brindamos asesoría gratuita</p>
+            </div> <!-- end contacto -->
+        </div>
+    </div>
 </main>
 
 {% endblock %}

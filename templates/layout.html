@@ -4,25 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <title>Click Sapace Developer</title>
     <!-- favicon -->
     <link rel="shortcut icon" href="/static/img/logo/favicon-v1.png">
+    <!-- SCRIPT -->
+    <script src="/static/js/menu.js"></script>
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Orbitron:wght@500&family=Roboto:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
     <main class="container" >
         <div class="navbar">
-            <ul>
+            <ul class="menu">
                 <li><a href="{{ url_for('home') }}">Inicio</a></li>
                 <li><a href="{{ url_for('servicios') }}">Servicios</a></li>
                 <li><a href="{{ url_for('identifica') }}">Identifica tu necesidad</a></li>
                 <li><a href="{{ url_for('clientes') }}">Clientes</a></li>
                 <li><a href="{{ url_for('contacto') }}">Contacto</a></li>
+                <li><a href=""><h3 style="color: #FFFFFF">Click Space Developer</h3></a></li>
             </ul>
-            <div class="menu">
+            <!-- BUTTON MENU -->
+            <div class="btn-menu" onclick="menu()">
                 <!-- MENÚ MÓVIL -->
                 <img src="/static/icon/menu.png" alt="Botón de menu">
             </div>
@@ -80,4 +85,5 @@
         </footer>
     </main>
 </body>
+<script src="/static/js/menu.js"></script>
 </html>

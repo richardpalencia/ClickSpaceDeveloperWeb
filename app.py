@@ -14,13 +14,13 @@ def home():
 def servicios():
     return render_template('servicios.html')
 
-@app.route('/identifica-tu-necesidad')
-def identifica():
-    return render_template('identifica.html')
+@app.route('/diseño grafico')
+def diseno_grafico():
+    return render_template('disenoGrafico.html')
 
-@app.route('/clientes')
-def clientes():
-    return render_template('clientes.html')
+@app.route('/redes sociales')
+def redes_sociales():
+    return render_template('redesSociales.html')
 
 @app.route('/contacto')
 def contacto():

@@ -3,422 +3,182 @@
     margin: 0;}
 
 /* Configuración general */
-body{
-    background-image: url(/static/img/inicio/fondo-software.jpg);
-    width: 100vw;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed}
+.inicio{
+    height: 100vh;
+    text-align: center;
+    padding: 4em 19em 0em 19em;}
 
-/*? SECCION 1 */
-.items{
-    width: 90vw;
-    margin-left: 5%;
-    align-items: center;}
+    h1{
+        font-family: 'Edu VIC WA NT Beginner', cursive;
+        color: var(--azul_1);
+        margin-top: 2em;
+        margin-bottom: 1.5em;
+        font-size: 5em;}
 
-    .logo{
-        width: 100%;
-        align-items: center;}
-        .logo img{
-            width: 35%;
-            margin-left: 32%;
-            padding-top: 12%;}
+    .servicio{text-align: center;}
 
-    .eslogan{
-        width: 40vw;
-        text-align: center;
-        font-family: 'Orbitron', sans-serif;
-        font-size: 1.5em;
-        margin-top: .5em;
-        padding-top: .3em;
-        margin-left: 26%;
-        border-top: 2px solid #FF0066;
-        color: #C1BABD;}
+    .servicio h2{
+        color: var(--azul_1);
+        font-size: 2.5em;}
 
-    .secciones{
-        width: 70vw;
-        margin-left: 10%;
-        display: flex;
-        margin-top: 7em;
-        margin-bottom: 2em;
-        align-items: center;
-        text-align: center;
-        justify-content: space-between;}
-        .secciones .box{
-            width: 15%;}
-            .secciones .box img{
-                width: 70%;
-                height: 100%;
-                border-radius: 3%;
-                position: relative;
-                cursor: pointer;
-                opacity: .5;}
-                .secciones .box img:hover{
-                    transition: 400ms;
-                    opacity: 1;
-                    border-radius: 40%;}
-        .secciones .box p{
-            font-family: 'Acme', sans-serif;
-            color: rgb(175, 173, 174);
-            font-size: 1.1em;
-            margin-top: .4em;}
+        .servicio p{
+            color: var(--gris_2);
+            margin-top: .7em;
+            font-size: 2em;}
 
-/*? SECICON 2*/
-.seccion2{
-    background-color: rgba(13,13,13,.75);
-    margin-top: 7em;
-    padding: 3em 7em 3em 7em;
-    display: block;
-    font-family: 'Roboto', sans-serif;
+/* ?CONFIGURACION BUTTON */
+    button{
+        width: 15em;
+        font-size: 1em;
+        color: white;
+        padding: .8em;
+        background-color: var(--azul_2);
+        border-radius: 8px;
+        border: solid 1px;}
 
-    display: grid;
-    grid-template-areas:
-        'header header header'
-        'tex tex img'
-        'btn btn btn';}
 
-    .seccion2 p{
+@media (max-width: 1461px){
+
+    .inicio{
+        padding: 4em 13em 0em 13em;}
+
+    h1{
+        margin-top: 1em;
+        margin-bottom: 1.5em;
+        font-size: 5em;}
+
+    .servicio h2{font-size: 2em;}
+
+        .servicio p{
+            margin-top: .7em;
+            font-size: 2em;}
+
+/* ?CONFIGURACION BUTTON */
+    button{
+        width: 14em;
+        font-size: 1em;
         padding: .8em;}
-    .seccion2 .title{
-        font-family: 'Orbitron', sans-serif;
-        grid-area: header;
-        font-size: 1.5em;
-        text-align: center;
-        margin-bottom: 3em;}
-    .seccion2 .tex-description{
-        grid-area: tex;
-        font-size: 1.8em;}
-    .seccion2 .img-s2{
-        grid-area: img;
-        justify-content: right;}
-    .seccion2 .img-s2 img{
-            width: 70%;
-            padding-left: 5em;}
-    .seccion2 .btn{
-        grid-area: btn;
-        text-align: center;}
 
-/*? seccion 3 */
-.seccion3 {
-    background-color: rgba(13,13,13,.75);
-    font-family: 'Roboto', sans-serif;
-    padding-bottom: 2em;
-    color: white;
-    display: block;
-    text-align: center;
-    margin-top: 8em;}
-    .seccion3 .title{
-        font-family: 'Orbitron', sans-serif;
-        font-size: 1.5em;
-        padding: 3em 0 0 0;}
-    .seccion3 p{
-        padding: 2em 5em 0 5em;
-        font-size: 1.8em;}
-    .seccion3 .img-word img{
-        margin-top: 4em;
-        margin-bottom: 2em;
-        width: 70%;}
-
-/*? SECCION 4 */
-.seccion4 {
-    background-color: rgba(13,13,13,.75);
-    font-family: 'Roboto', sans-serif;
-    padding-bottom: 2em;
-    color: white;
-    text-align: center;
-    margin-top: 8em;
-
-    display: grid;
-    grid-template-areas:
-        'title title'
-        'img description'
-        'btn btn';}
-    .seccion4 .title{
-        font-family: 'Orbitron', sans-serif;
-        grid-area: title;
-        font-size: 1.5em;
-        padding: 3em 0 3em 0;}
-    .seccion4 .negocios{
-        grid-area: img;}
-        .seccion4 .negocios img{
-            width: 60%;}
-    .seccion4 .description{
-        grid-area: description;
-        text-align: left;
-        padding: 0 10em 0 3em;}
-        .seccion4 .description p{
-            font-size: 1.5em;
-            margin-top: 1em;}
-    .seccion4 .btn{
-        grid-area: btn;
-        text-align: center;
-        margin-top: 2em;}
-
-/*? SECCION 5*/
-.seccion5 {
-    background: rgba(193,186,189,.7);
-    margin-top: 6em;
-    font-family: 'Orbitron', sans-serif;
-    padding-bottom: 2em;
-    font-size: 1.5em;
-    color: white;
-    text-align: center;
-    z-index: 1;}
-    .seccion5 .title{
-        background-color: rgba(13,13,13,.9);
-        padding: 1em;}
-
-/*? SECCION 6 */
-.seccion6{
-    background-color: rgba(13,13,13,.75);
-    text-align: center;
-    color: white;
-    margin-top: 8em;
-    padding: 5em;}
-    .seccion6 .photo img{
-        width: 15%;
-        border: 3px solid rgb(13,13,13);
-        border-radius: 50%;}
-        .seccion6 .photo img:hover{
-            border: 3px solid #FF0066;
-            transition: 300ms;
-            cursor: pointer;}
-    .seccion6 .name-developer{
-        font-family: 'Orbitron', sans-serif;
-        color: #00DA00;
-        font-size: 1.5em;
-        margin-top: 1em;}
-    .seccion6 .description{
-        font-family: 'Roboto', sans-serif;
-        font-size: 1.7em;
-        padding: 2em 5em 0em 5em;}
-        .seccion6 .description p{
-            padding: 1em;}
-
-/*?BUTTONS*/
-.btn button{
-    width: 12em;
-    padding: .5em;
-    color: white;
-    border-radius: 8px;
-    font-size: 1em;
-    margin-top: 1em;
-    font-family: 'Orbitron', sans-serif;
-    border: 2px solid #FF0066;
-    background-color: rgba(255, 0, 102, .3);}
-.btn button:hover{
-    background-color: #FF0066;
-    border-color: white;
-    transition: 300ms;
-    cursor: pointer;}
-
-
-@media screen and (max-width: 1000px) {
-    .logo{
-        width: 100%;
-        align-items: center;}
-        .logo img{
-            width: 65%;
-            margin-left: 19%;
-            padding-top: 12%;}
-
-    .eslogan{
-        width: 90vw;
-        font-size: 1.5em;
-        margin-top: .5em;
-        padding-top: .3em;
-        margin-left: 0%;}
-
-    .secciones{
-        width: 70vw;
-        display: block;
-        margin-left: 30%;
-        margin-top: 8em;
-        justify-content:center}
-        .secciones .box{
-            width: 50%;
-            margin-right: 0;
-            margin-left: 0;
-            margin-top: 8em;}
-        .secciones .box p{
-            font-size: 1.5em;
-            margin-top: .5em;}
 }
 
-@media screen and (max-width: 700px) {
-    /* Configuración general */
-    body{
-        background-image: url(/static/img/inicio/fondo-software.jpg);
-        width: 100vw;
-        height: 100%;
-        background-repeat: no-repeat;
-        background-size:cover;
-        background-attachment: fixed}
-    /*? SECCION 1*/
-    .items{
-        width: 100vw;
-        margin-left: 5%;
-        align-items: center;}
+@media (max-width: 1168px){
 
-        .logo{
-            width: 100%;
-            align-items: center;}
-            .logo img{
-                width: 70%;
-                margin-left: 10%;
-                padding-top: 20%;}
+    .inicio{
+        padding: 4em 10em 0em 10em;}
 
-        .eslogan{
-            width: 90vw;
-            font-size: 1em;
-            margin-top: .5em;
-            padding-top: .5em;
-            margin-left: 0%;}
+    h1{
+        margin-top: 1em;
+        margin-bottom: 1.5em;
+        font-size: 4em;}
 
-        .secciones{
-            width: 90vw;
-            display: block;
-            margin-left: 0%;
-            margin-top: 5em;
-            align-items: center;
-            text-align: center;
-            justify-content: space-between;}
-            .secciones .box{
-                width: 60%;
-                margin-left: 20%;
-                margin-top: 4em;}
-                .secciones .box img{
-                    opacity: 1;}
-            .secciones .box p{
-                font-size: 1em;
-                margin-top: .4em;
-                font-family: 'Roboto', sans-serif;}
+    .servicio h2{font-size: 2em;}
 
-    /*? SECICON 2*/
-    .seccion2{
-        margin-top: 3em;
-        padding: 2em 1em 2em 1em;
+        .servicio p{
+            margin-top: .7em;
+            font-size: 1.8em;}
 
-        display: grid;
-        grid-template-areas:
-            'header header header'
-            'tex tex tex'
-            'img img img'
-            'btn btn btn';}
+/* ?CONFIGURACION BUTTON */
+    button{
+        width: 12em;
+        font-size: .9em;
+        padding: .8em;}
 
-        .seccion2 p{
-            padding: .8em;}
-        .seccion2 .title{
-            grid-area: header;
-            font-size: .8em;
-            text-align: center;
-            margin-bottom: 3em;}
-        .seccion2 .tex-description{
-            grid-area: tex;
-            text-align: left;
-            font-size: 1.1em;}
-        .seccion2 .img-s2{
-            grid-area: img;
-            justify-content: center;}
-        .seccion2 .img-s2 img{
-                width: 70%;
-                padding-top: 2em;
-                padding-left: 3em;}
-        .seccion2 .btn{
-            grid-area: btn;
-            margin-top: 1em;
-            text-align: center;}
+}
 
-    /*? seccion 3 */
-    .seccion3 {
-        padding-bottom: 2em;
-        color: white;
-        display: block;
-        text-align: center;
-        margin-top: 5em;}
-        .seccion3 .title{
-            font-family: 'Orbitron', sans-serif;
-            font-size: .8em;
-            padding: 2em 0 0 0;}
-        .seccion3 p{
-            padding: 2em 1em 2em 1em;
-            font-size: 1.1em;}
-        .seccion3 .img-word img{
-            margin-top: 1em;
-            margin-bottom: 2em;
-            width: 95%;}
+@media (max-width: 1042px){
 
-    /*? SECCION 4 */
-    .seccion4 {
-        padding-bottom: 2em;
-        margin-top: 5em;
+    .inicio{
+        padding: 4em 7.5em 0em 7.5em;}
 
-        display: grid;
-        grid-template-areas:
-            'title'
-            'description'
-            'img'
-            'btn';}
-        .seccion4 .title{
-            grid-area: title;
-            font-size: .8em;
-            padding: 2em 1em 2em 1em;}
-        .seccion4 .negocios{
-            display: none;
-            grid-area: img;}
-            .seccion4 .negocios img{
-                width: 40%;}
-        .seccion4 .description{
-            grid-area: description;
-            text-align: left;
-            padding: 1em 2em 1em 2em;}
-            .seccion4 .description p{
-                font-size: 1.1em;
-                text-align: left;
-                margin-top: .8em;}
-        .seccion4 .btn{
-            grid-area: btn;
-            text-align: center;
-            margin-top: 2em;}
+    h1{
+        margin-top: 1em;
+        margin-bottom: 1.5em;
+        font-size: 4em;}
 
-    /*? SECCION 5*/
-    .seccion5 {
-        background: rgba(193,186,189,.7);
-        margin-top: 6em;
-        font-family: 'Orbitron', sans-serif;
-        padding-bottom: 2em;
-        font-size: .7em;
-        color: white;
-        text-align: center;
-        z-index: 1;}
-        .seccion5 .title{
-            background-color: rgba(13,13,13,.9);
-            padding: 1em;}
+    .servicio h2{font-size: 2em;}
 
-    /*? SECCION 6 */
-    .seccion6{
-        margin-top: 6em;
-        padding: 0em;}
-        .seccion6 .photo img{
-            margin-top: 2em;
-            width: 55%;}
-        .seccion6 .name-developer{
-            font-size: .9em;
-            margin-top: 1em;}
-        .seccion6 .description{
-            font-size: 1em;
-            text-align: justify;
-            padding: 2em 1em 2em 1em;}
-            .seccion6 .description p{
-                padding: .5em;}
+        .servicio p{
+            margin-top: .7em;
+            font-size: 1.7em;}
 
-    /*?BUTTONS*/
-    .btn button{
-        width: 10em;
-        padding: .5em;
-        border-radius: 8px;
+/* ?CONFIGURACION BUTTON */
+    button{
+        width: 12em;
+        font-size: .9em;
+        padding: .8em;}
+
+}
+
+@media (max-width: 888px){
+
+    .inicio{
+        padding: 4em 6em 0em 6em;}
+
+    h1{
+        margin-top: .9em;
+        margin-bottom: 1.3em;
+        font-size: 3.3em;}
+
+    .servicio h2{font-size: 1.8em;}
+
+        .servicio p{
+            margin-top: .7em;
+            font-size: 1.6em;}
+
+/* ?CONFIGURACION BUTTON */
+    button{
+        width: 12em;
+        font-size: .9em;
+        padding: .8em;}
+
+}
+
+@media (max-width: 765px){
+
+    .inicio{
+        padding: 4em 4em 0em 4em;}
+
+    h1{
+        margin-top: .9em;
+        margin-bottom: 1.3em;
+        font-size: 3em;}
+
+    .servicio h2{font-size: 1.8em;}
+
+        .servicio p{
+            margin-top: .6em;
+            font-size: 1.4em;}
+
+/* ?CONFIGURACION BUTTON */
+    button{
+        width: 12em;
         font-size: .8em;
-        margin-top: 1em;}
+        padding: .8em;}
+
+}
+
+/*? VERSIÒN MÓVIL */
+@media (max-width: 671px){
+
+    .inicio{
+        padding: 1.8em 2em 0em 1.8em;}
+
+    h1{
+        margin-top: .9em;
+        margin-bottom: 1.3em;
+        font-size: 2.5em;}
+
+    .servicio h2{font-size: 1.5em;}
+
+        .servicio p{
+            margin-top: .6em;
+            font-size: 1.3em;}
+
+/* ?CONFIGURACION BUTTON */
+    button{
+        margin-top: 12em;
+        width: 12em;
+        font-size: .8em;
+        padding: .8em;}
 
 }

@@ -412,7 +412,9 @@
         margin-bottom: 1.3em;
         font-size: 2em;}
 
-    .servicio h2{font-size: 1.4em;}
+    .servicio h2{
+        font-size: 1.4em;
+        padding: .5em;}
 
         .servicio p{
             margin-top: .6em;
@@ -463,7 +465,9 @@
         margin-bottom: 1.3em;
         font-size: 2em;}
 
-    .servicio h2{font-size: 1.3em;}
+    .servicio h2{
+        font-size: 1.3em;
+        padding: 1em;}
 
         .servicio p{
             margin-top: .6em;
@@ -505,7 +509,7 @@
 
 /*! HEIGHT*/
 /*? VERSIÒN MÓVIL */
-@media (max-height: 806px){
+@media (max-height: 506px){
 
     .inicio{
         padding: 1.8em 2em 0em 1.8em;}

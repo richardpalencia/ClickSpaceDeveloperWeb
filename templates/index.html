@@ -1,6 +1,9 @@
 {% extends "layout.html" %}
 {% block content %}
 
+<!-- ICONS SERVICE -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
 <!-- Style -->
 <link rel="stylesheet" href="/static/css/home.css">
 
@@ -8,17 +11,181 @@
     <!-- INICIO -->
     <div class="inicio">
         <h1>
-            Ábrete la puerta al mundo y <span style="color: var(--azul_2); font-family: 'Edu VIC WA NT Beginner', cursive;;">no te pongas límites ...</span>
+            Ábrete la puerta al mundo y
+            <span style="color: var(--azul_2); font-family: 'Poppins', sans-serif;">
+                no te pongas límites ...
+            </span>
         </h1>
-        <a href="#">
-            <button>DESCUBRE COMO</button>
+        <a href="{{ url_for('servicios') }}">
+            <button>
+                DESCUBRE COMO
+            </button>
         </a>
     </div><!-- end inicio -->
 
+    <!-- SERVICE TITLE -->
     <div class="servicio">
-        <h2>Servicios de Desarrollo Web y Diseño Gráfico</h2>
-        <p>Todo a tu alcance</p>
+        <h2>
+            Servicios de Desarrollo Web y Diseño Gráfico
+        </h2>
+        <p>
+            Todo a tu alcance
+        </p>
     </div>
+
+    <!-- SERVICE PACK -->
+    <div class="service-pack">
+        <!-- Pack Service Desarrollo web Comercial-->
+        <div class="pack">
+            <div class="icon">
+                <span class="material-symbols-outlined">
+                    travel_explore
+                </span>
+            </div>
+            <div>
+                <h3>
+                    Desarrollo Web Comercial
+                </h3>
+                <p>
+                    Con este servicio puedes tener tu sitio web totalmente personalizado,
+                    no tienes que preocuparte si tienes o no un diseño ya pensado, contamos con un diseñador
+                    gráfico que te ayudará a crear tu propia marca con estilos únicos a corde lo que tu negocio
+                    necesita proyectar.
+                    <br><br>
+                    Utilizamos las tecnologías más avanzadas para que tu sitio sea funcional 100% a las necesidades
+                    que requieres, está diseñado para dispositivos móviles, tabletas y PC.
+                    <br><br>
+                    Muestrale al mundo quien eres con un sitio Web Comercial y potencializa tu ngocio al
+                    máximo.
+                </p>
+            </div>
+            <div>
+                <a href="">
+                    <button>
+                        VER DETALLE
+                    </button>
+                </a>
+            </div>
+        </div> <!-- end service web Comercial -->
+
+        <!-- Pack Service Diseño Gràfico-->
+        <div class="pack">
+            <div class="icon">
+                <span class="material-symbols-outlined">
+                    camera
+                </span>
+            </div>
+            <div>
+                <h3>
+                    Diseño Gráfico
+                </h3>
+                <p>
+                    Si necesitas un Diseñador Gráfico profesional que pueda orientar y ayudarte a crear
+                    esa comunicación visual que necesita tu negocio o estrategia de Marketing, estás en el lugar
+                    correcto, nosotros te ofrecemos, logotipos, bocetos, banners, edición de imágenes,
+                    carteles y mucho más..
+                </p>
+            </div>
+            <div>
+                <a href="">
+                    <button>
+                        VER DETALLE
+                    </button>
+                </a>
+            </div>
+        </div> <!-- end service diseño gràfico -->
+
+        <!-- Pack Service Redes Sociales-->
+        <div class="pack">
+            <div class="icon">
+                <span class="material-symbols-outlined">
+                    thumb_up
+                </span>
+            </div>
+            <div>
+                <h3>
+                    Redes Sociales
+                </h3>
+                <p>
+                    Si no sabes como o no tienes tiempo de crear tus estrategias comerciales en redes sociales,
+                    nosotros lo hacemos por ti, potencializa tus ventas en Facebook y llega a mucho más gente
+                    de la que te puedes imaginar, creamos a tu medida, una estrategia comercial que sin duda
+                    acelarará tus ventas.
+                    <br><br>
+                    Si no cuentas con Redes Sociales no te preocupes, nosotros las creamos y damos mantenimiento
+                    por tí, no te limites con la interacción con tus cientes, con las Redes Sociales puedes
+                    intensificar tus ventas al instante (Facebook, Tiwter, Instagram y Youtube).
+                    <br><br>
+
+                </p>
+            </div>
+            <div>
+                <a href="">
+                    <button>
+                        VER DETALLE
+                    </button>
+                </a>
+            </div>
+        </div> <!-- end service redes sociales -->
+
+        <!-- Pack Service  Desarrollo web Empresarial-->
+        <div class="pack">
+            <div class="icon">
+                <span class="material-symbols-outlined">
+                    language
+                </span>
+            </div>
+            <div>
+                <h3>
+                    Desarrollo web Empresarial
+                </h3>
+                <p>
+                    Si tu necesidad es sistematizar tu negocio o empresa con la necesidad de integrar un Work Flow sistematizado
+                    con necesidad de manejo de Base de Datos y monitorear tu productividad con KPIs que te ayuden
+                    ayuden a la toma de desiciones, nosotros te automatizamos los procesos de tu empresa.
+                    <br><br>
+                    Contamos con más de 10 años de experiencia en el diseño de procesos sistematizados que
+                    ayudarán a tu negocio a ser mucho más eficiente y evitar perdidas de información o de tiempo
+                    por un proceso manual mal ejecutado.
+                </p>
+            </div>
+            <div>
+                <a href="">
+                    <button>
+                        VER DETALLE
+                    </button>
+                </a>
+            </div>
+        </div> <!-- end service web empresarial -->
+
+        <!-- Pack Service Mantenimiento Web-->
+        <div class="pack">
+            <div class="icon">
+                <span class="material-symbols-outlined">
+                    engineering
+                </span>
+            </div>
+            <div>
+                <h3>
+                    Mantenimiento Web
+                </h3>
+                <p>
+                    Si creaste tu Web con nosotros o ya tienes una y necesita mantenimiento, nosotros tenemos la solución,
+                    te brindamos un servicio de cambios o ajustes que necesite tu Sito Web.
+                    <br><br>
+                    Manejamos planes que se ajustan a tus necesidades para que tu sitio siempre se encuentre
+                    actualizado.
+                </p>
+            </div>
+            <div>
+                <a href="">
+                    <button>
+                        VER DETALLE
+                    </button>
+                </a>
+            </div>
+        </div> <!-- end service mantenimiento web -->
+    </div> <!-- end service pack -->
 
 </main>
 

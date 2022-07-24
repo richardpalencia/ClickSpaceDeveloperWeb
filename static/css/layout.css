@@ -38,7 +38,7 @@ html{width: 100%;}
         .menu li{
             list-style: none;
             padding: 0em 1.5em 0em 0em;
-            font-size: 1em;}
+            font-size: .9em;}
 
             .menu li a{
                 text-decoration: none;
@@ -59,38 +59,39 @@ html{width: 100%;}
         .menu li{padding: 0em 1em 0em 0em; font-size: .9em;}
 }
 
-@media (max-width: 1168px){
+@media (max-width: 1185px){
     .navbar .menu{padding-right: 2em;}
 
         .menu li{padding: 0em 1em 0em 0em; font-size: .8em;}
 }
 
-@media (max-width: 1042px){
+@media (max-width: 1060px){
     .navbar .menu{padding-right: 2em;}
 
         .menu li{padding: 0em .8em 0em 0em; font-size: .7em;}
 }
 
-@media (max-width: 888px){
+@media (max-width: 901px){
     .navbar .menu{padding-right: 1em;}
 
         .menu li{padding: 0em .5em 0em 0em; font-size: .65em;}
 }
 
-@media (max-width: 765px){
+@media (max-width: 781px){
     .navbar .menu{padding-right: .5em;}
 
         .menu li{padding: 0em .3em 0em 0em; font-size: .60em;}
 }
 
 /*? VERSIÒN MÓVIL */
-@media (max-width: 671px){
+@media (max-width: 686px){
     /* CONFIG NAVBAR */
     .menu-movil{
         display: block;
+        padding-top: .5em;
         text-align: right;
         padding-right: .3em;
-        font-size: 3em;}
+        font-size: 2em;}
 
     #open-menu{display: block;}
     #close-menu{display: none;}
@@ -134,4 +135,44 @@ html{width: 100%;}
                     background-color:var(--azul_2);
                     transition: 500ms;
                     border-radius: 4px;}
+}
+
+/*! HEIGHT*/
+/*? VERSIÒN MÓVIL */
+@media (max-height: 400px){
+    /* CONFIG NAVBAR */
+    .menu-movil{
+        display: block;
+        padding-top: .5em;
+        text-align: right;
+        padding-right: .3em;
+        font-size: 2em;}
+
+    #open-menu{display: block;}
+    #close-menu{display: none;}
+
+    .name-app{display: block;}
+
+    .logo{
+        margin-top: 1em;
+        display: none;}
+
+    .header{
+        display: block;
+        padding-top: 0em;
+        padding-bottom: 1em;}
+
+        .navbar{text-align: center;}
+
+        .navbar .menu{
+            position: fixed;
+            height: 100%;
+            width: 80%;
+            margin-left: 20%;
+            display:none;
+            padding: 3em 0em 0em 0em;
+            border-radius: 8px;}
+
+            .menu li{
+                font-size: .65em;}
 }

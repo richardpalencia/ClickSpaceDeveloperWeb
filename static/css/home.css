@@ -1,6 +1,7 @@
 *{
     padding: 0;
-    margin: 0;}
+    margin: 0;
+    color: var(--azul_1);}
 
 /* Configuración general */
 .inicio{
@@ -9,11 +10,10 @@
     padding: 4em 19em 0em 19em;}
 
     h1{
-        font-family: 'Edu VIC WA NT Beginner', cursive;
-        color: var(--azul_1);
+        font-family: 'Poppins', sans-serif;
         margin-top: 2em;
         margin-bottom: 1.5em;
-        font-size: 5em;}
+        font-size: 4em;}
 
     .servicio{text-align: center;}
 
@@ -26,6 +26,42 @@
             margin-top: .7em;
             font-size: 2em;}
 
+/* ?SERVICE */
+.service-pack{
+    margin: 10em 10em 1em ;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-flow:wrap row;}
+
+    .pack{
+        width: 20%;
+        height: 55vh;
+        margin: 1em;
+        padding: 1.5em;
+        position: relative;
+        border-top: 8px solid var(--azul_2);
+        box-shadow: 10px 10px 10px var(--gris_2);
+        background-color: rgba(245, 245, 245, 0.733)}
+
+        .material-symbols-outlined {
+            font-size: 4em;}
+
+        .pack h3{margin-bottom: 1em;}
+
+        .pack p{
+            padding: .5em;
+            font-size: .9em;
+            text-align: left;
+            color: var(--gris_2);}
+
+        .pack button{
+            width: 50%;
+            font-size: .7em;
+            position: absolute;
+            bottom: 5%;
+            left: 25%;}
+
 /* ?CONFIGURACION BUTTON */
     button{
         width: 15em;
@@ -34,8 +70,40 @@
         padding: .8em;
         background-color: var(--azul_2);
         border-radius: 8px;
-        border: solid 1px;}
+        border: solid 1px var(--azul_2)}
 
+        button:hover{
+            border: solid 1px var(--azul_1);
+            background-color: var(--azul_1);
+            transition: 400ms;
+            cursor: pointer;}
+
+@media (max-width: 1561px){
+    /* ?SERVICE */
+    .service-pack{margin: 10em 10em 1em ;}
+
+        .pack{
+            width: 20%;
+            height: 55vh;
+            margin: 1em;
+            padding: 1.5em;}
+
+            .material-symbols-outlined {font-size: 3em;}
+
+            .pack h3{
+                margin-bottom: 1em;
+                font-size: .95em;}
+
+            .pack p{
+                padding: .1em;
+                font-size: .78em;}
+
+            .pack button{
+                width: 50%;
+                font-size: .7em;
+                bottom: 5%;
+                left: 25%;}
+}
 
 @media (max-width: 1461px){
 
@@ -45,13 +113,38 @@
     h1{
         margin-top: 1em;
         margin-bottom: 1.5em;
-        font-size: 5em;}
+        font-size: 3.5em;}
 
     .servicio h2{font-size: 2em;}
 
         .servicio p{
             margin-top: .7em;
             font-size: 2em;}
+
+    /* ?SERVICE */
+    .service-pack{margin: 8em 8em 1em ;}
+
+        .pack{
+            width: 20%;
+            height: 55vh;
+            margin: 1em;
+            padding: 1.5em;}
+
+            .material-symbols-outlined {font-size: 3em;}
+
+            .pack h3{
+                margin-bottom: 1em;
+                font-size: .85em;}
+
+            .pack p{
+                padding: .1em;
+                font-size: .8em;}
+
+            .pack button{
+                width: 50%;
+                font-size: .7em;
+                bottom: 5%;
+                left: 25%;}
 
 /* ?CONFIGURACION BUTTON */
     button{
@@ -69,13 +162,38 @@
     h1{
         margin-top: 1em;
         margin-bottom: 1.5em;
-        font-size: 4em;}
+        font-size: 3.2em;}
 
     .servicio h2{font-size: 2em;}
 
         .servicio p{
             margin-top: .7em;
             font-size: 1.8em;}
+
+    /* ?SERVICE */
+    .service-pack{margin: 8em 8em 1em ;}
+
+        .pack{
+            width: 22%;
+            height: 55vh;
+            margin: 1em;
+            padding: 1.5em;}
+
+            .material-symbols-outlined {font-size: 2.5em;}
+
+            .pack h3{
+                margin-bottom: .8em;
+                font-size: .8em;}
+
+            .pack p{
+                padding: 0em;
+                font-size: .73em;}
+
+            .pack button{
+                width: 50%;
+                font-size: .7em;
+                bottom: 5%;
+                left: 25%;}
 
 /* ?CONFIGURACION BUTTON */
     button{
@@ -93,13 +211,38 @@
     h1{
         margin-top: 1em;
         margin-bottom: 1.5em;
-        font-size: 4em;}
+        font-size: 3em;}
 
     .servicio h2{font-size: 2em;}
 
         .servicio p{
             margin-top: .7em;
             font-size: 1.7em;}
+
+    /* ?SERVICE */
+    .service-pack{margin: 6em 6em 1em ;}
+
+        .pack{
+            width: 30%;
+            height: 50vh;
+            margin: 1em;
+            padding: 1.5em;}
+
+            .material-symbols-outlined {font-size: 2.5em;}
+
+            .pack h3{
+                margin-bottom: .8em;
+                font-size: .8em;}
+
+            .pack p{
+                padding: 0em;
+                font-size: .78em;}
+
+            .pack button{
+                width: 50%;
+                font-size: .7em;
+                bottom: 5%;
+                left: 25%;}
 
 /* ?CONFIGURACION BUTTON */
     button{
@@ -117,13 +260,38 @@
     h1{
         margin-top: .9em;
         margin-bottom: 1.3em;
-        font-size: 3.3em;}
+        font-size: 2.7em;}
 
     .servicio h2{font-size: 1.8em;}
 
         .servicio p{
             margin-top: .7em;
             font-size: 1.6em;}
+
+    /* ?SERVICE */
+    .service-pack{margin: 2em 2em 1em ;}
+
+        .pack{
+            width: 35%;
+            height: 40vh;
+            margin: 1em;
+            padding: 1em;}
+
+            .material-symbols-outlined {font-size: 2.5em;}
+
+            .pack h3{
+                margin-bottom: .8em;
+                font-size: .8em;}
+
+            .pack p{
+                padding: 0em;
+                font-size: .75em;}
+
+            .pack button{
+                width: 50%;
+                font-size: .7em;
+                bottom: 5%;
+                left: 25%;}
 
 /* ?CONFIGURACION BUTTON */
     button{
@@ -141,13 +309,38 @@
     h1{
         margin-top: .9em;
         margin-bottom: 1.3em;
-        font-size: 3em;}
+        font-size: 2.5em;}
 
     .servicio h2{font-size: 1.8em;}
 
         .servicio p{
             margin-top: .6em;
             font-size: 1.4em;}
+
+    /* ?SERVICE */
+    .service-pack{margin: 3em 3em 1em ;}
+
+        .pack{
+            width: 35%;
+            height: 50vh;
+            margin: 1em;
+            padding: 1em;}
+
+            .material-symbols-outlined {font-size: 2.5em;}
+
+            .pack h3{
+                margin-bottom: .8em;
+                font-size: .8em;}
+
+            .pack p{
+                padding: 0em;
+                font-size: .8em;}
+
+            .pack button{
+                width: 50%;
+                font-size: .7em;
+                bottom: 5%;
+                left: 25%;}
 
 /* ?CONFIGURACION BUTTON */
     button{
@@ -166,13 +359,243 @@
     h1{
         margin-top: .9em;
         margin-bottom: 1.3em;
-        font-size: 2.5em;}
+        font-size: 2em;}
 
     .servicio h2{font-size: 1.5em;}
 
         .servicio p{
             margin-top: .6em;
             font-size: 1.3em;}
+
+    /* ?SERVICE */
+    .service-pack{margin: 2em 2em 1em ;}
+
+        .pack{
+            width: 50%;
+            height: 50vh;
+            margin: 1em;
+            padding: 1em;}
+
+            .material-symbols-outlined {font-size: 3em;}
+
+            .pack h3{
+                margin-bottom: .8em;
+                font-size: 1em;}
+
+            .pack p{
+                padding: 0em;
+                font-size: .9em;}
+
+            .pack button{
+                width: 50%;
+                font-size: .7em;
+                bottom: 5%;
+                left: 25%;}
+
+/* ?CONFIGURACION BUTTON */
+    button{
+        margin-top: 12em;
+        width: 12em;
+        font-size: .8em;
+        padding: .8em;}
+
+}
+
+/*? VERSIÒN MÓVIL */
+@media (max-width: 671px){
+
+    .inicio{
+        padding: 1.8em 2em 0em 1.8em;}
+
+    h1{
+        margin-top: .9em;
+        margin-bottom: 1.3em;
+        font-size: 2em;}
+
+    .servicio h2{font-size: 1.4em;}
+
+        .servicio p{
+            margin-top: .6em;
+            font-size: 1.3em;}
+
+    /* ?SERVICE */
+    .service-pack{margin: 2em 2em 1em ;}
+
+        .pack{
+            width: 90%;
+            height: 40vh;
+            margin: 1em;
+            padding: 1em;}
+
+            .material-symbols-outlined {font-size: 3em;}
+
+            .pack h3{
+                margin-bottom: .8em;
+                font-size: 1em;}
+
+            .pack p{
+                padding: 0em;
+                font-size: .9em;}
+
+            .pack button{
+                width: 50%;
+                font-size: .7em;
+                bottom: 5%;
+                left: 25%;}
+
+/* ?CONFIGURACION BUTTON */
+    button{
+        margin-top: 12em;
+        width: 12em;
+        font-size: .8em;
+        padding: .8em;}
+
+}
+
+/*? VERSIÒN MÓVIL */
+@media (max-width: 384px){
+
+    .inicio{
+        padding: 1.8em 2em 0em 1.8em;}
+
+    h1{
+        margin-top: .9em;
+        margin-bottom: 1.3em;
+        font-size: 2em;}
+
+    .servicio h2{font-size: 1.3em;}
+
+        .servicio p{
+            margin-top: .6em;
+            font-size: 1.3em;}
+
+    /* ?SERVICE */
+    .service-pack{margin: 1em 1em 1em ;}
+
+        .pack{
+            width: 90%;
+            height: 60vh;
+            margin: 1em;
+            padding: 1em;}
+
+            .material-symbols-outlined {font-size: 3em;}
+
+            .pack h3{
+                margin-bottom: .8em;
+                font-size: 1em;}
+
+            .pack p{
+                padding: 0em;
+                font-size: .8em;}
+
+            .pack button{
+                width: 50%;
+                font-size: .7em;
+                bottom: 5%;
+                left: 25%;}
+
+/* ?CONFIGURACION BUTTON */
+    button{
+        margin-top: 12em;
+        width: 12em;
+        font-size: .8em;
+        padding: .8em;}
+
+}
+
+/*! HEIGHT*/
+/*? VERSIÒN MÓVIL */
+@media (max-height: 806px){
+
+    .inicio{
+        padding: 1.8em 2em 0em 1.8em;}
+
+    h1{
+        margin-top: .9em;
+        margin-bottom: 1.3em;
+        font-size: 2em;}
+
+    .servicio h2{font-size: 1.3em;}
+
+        .servicio p{
+            margin-top: .6em;
+            font-size: 1.3em;}
+
+    /* ?SERVICE */
+    .service-pack{margin: 4em 4em 1em ;}
+
+        .pack{
+            width: 90%;
+            height: 60vh;
+            margin: 1em;
+            padding: 1em;}
+
+            .material-symbols-outlined {font-size: 3em;}
+
+            .pack h3{
+                margin-bottom: .8em;
+                font-size: 1em;}
+
+            .pack p{
+                padding: 0em;
+                font-size: .8em;}
+
+            .pack button{
+                width: 50%;
+                font-size: .7em;
+                bottom: 5%;
+                left: 25%;}
+
+/* ?CONFIGURACION BUTTON */
+    button{
+        margin-top: 12em;
+        width: 12em;
+        font-size: .8em;
+        padding: .8em;}
+
+}
+
+/*? VERSIÒN MÓVIL */
+@media (max-height: 400px){
+
+    .inicio{
+        padding: 1.8em 2em 0em 1.8em;}
+
+    h1{
+        margin-top: .9em;
+        margin-bottom: 1.3em;
+        font-size: 2em;}
+
+    .servicio h2{font-size: 1.3em;}
+
+        .servicio p{
+            margin-top: .6em;
+            font-size: 1.3em;}
+
+    /* ?SERVICE */
+    .service-pack{margin: 2em 1em 1em ;}
+
+        .pack{
+            width: 90%;
+            height: 70vh;
+            margin: 1em;
+            padding: 1em;}
+
+            .material-symbols-outlined {font-size: 3em;}
+
+            .pack h3{
+                margin-bottom: .8em;
+                font-size: 1em;}
+
+            .pack p{
+                padding: 0em;
+                font-size: .8em;}
+
+            .pack button{
+                width: 50%;
+                font-size: .7em;
+                bottom: 5%;
+                left: 25%;}
 
 /* ?CONFIGURACION BUTTON */
     button{

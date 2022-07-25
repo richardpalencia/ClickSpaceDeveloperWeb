@@ -1,7 +1,7 @@
 var open_menu = document.querySelector("#open-menu");
 var close_menu = document.querySelector("#close-menu");
 var menu_movil = document.querySelector(".menu");
-var contador = 1
+var contador = 1;
 
 function menu(){
     if(contador == 0){

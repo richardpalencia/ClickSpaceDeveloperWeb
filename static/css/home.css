@@ -28,7 +28,7 @@
 
 /* ?SERVICE */
 .service-pack{
-    margin: 10em 10em 1em ;
+    margin: 8em 8em 1em ;
     text-align: center;
     justify-content: center;
     display: flex;
@@ -43,6 +43,10 @@
         border-top: 8px solid var(--azul_2);
         box-shadow: 10px 10px 10px var(--gris_2);
         background-color: rgba(245, 245, 245, 0.733)}
+
+        .pack:hover{
+            transition: 500ms;
+            border-top: 8px solid var(--azul_1);}
 
         .material-symbols-outlined {
             font-size: 4em;}
@@ -62,7 +66,54 @@
             bottom: 5%;
             left: 25%;}
 
-/* ?CONFIGURACION BUTTON */
+/*?POR QUE SI TENER UNA PÁGINA WEB*/
+.container-tener-pagina{
+    margin: 3em 3em 1em ;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-flow:wrap row;}
+
+    .caja-razon-gral{
+        width: 27%;
+        padding: 2em;}
+
+        .caja-razon{
+            padding-top: .8em;
+            font-size: 1.2em;
+            background-color: var(--azul_2);
+            border-radius: 4px 4px 0px 0px;
+            height: 2em;}
+
+            .caja-razon p, li{
+                list-style: none;
+                color: white;
+                margin-top: .3em;}
+
+        .caja-razon:hover{
+            background-color: var(--azul_1);
+            cursor: pointer;
+            transition: 400ms;}
+
+        .description{
+            background-color: var(--azul_1t);
+            padding: 3em;
+            height: 45vh;
+            text-align: left;
+            display: none;
+            transition: all 1s;}
+
+        .mostrar {animation: mostrararriba 1.5s;}
+
+        @keyframes mostrararriba{
+            0% {transform: translateY(-4em);}
+            100% {transform: traslateY(0)}}
+
+        .description p {color: white;}
+
+
+
+/* !CONFIGURACION BUTTON */
     button{
         width: 15em;
         font-size: 1em;
@@ -103,6 +154,27 @@
                 font-size: .7em;
                 bottom: 5%;
                 left: 25%;}
+
+/*?POR QUE SI TENER UNA PÁGINA WEB*/
+.container-tener-pagina{
+    margin: 3em 3em 1em ;}
+
+    .caja-razon-gral{
+        width: 27%;
+        padding: 2em;}
+
+        .caja-razon{
+            padding-top: .7em;
+            font-size: 1em;
+            height: 2em;}
+
+            .caja-razon p, li{margin-top: .2em;}
+
+        .description{
+            padding: 2em;
+            height: 35vh;
+            font-size: .8em;}
+
 }
 
 @media (max-width: 1461px){
@@ -125,8 +197,8 @@
     .service-pack{margin: 8em 8em 1em ;}
 
         .pack{
-            width: 20%;
-            height: 55vh;
+            width: 25%;
+            height: 60vh;
             margin: 1em;
             padding: 1.5em;}
 
@@ -145,6 +217,26 @@
                 font-size: .7em;
                 bottom: 5%;
                 left: 25%;}
+
+/*?POR QUE SI TENER UNA PÁGINA WEB*/
+.container-tener-pagina{
+    margin: 3em 3em 1em ;}
+
+    .caja-razon-gral{
+        width: 27%;
+        padding: 2em;}
+
+        .caja-razon{
+            padding-top: .7em;
+            font-size: 1em;
+            height: 2em;}
+
+            .caja-razon p, li{margin-top: .2em;}
+
+        .description{
+            padding: 2em;
+            height: 43vh;
+            font-size: .8em;}
 
 /* ?CONFIGURACION BUTTON */
     button{
@@ -195,6 +287,26 @@
                 bottom: 5%;
                 left: 25%;}
 
+/*?POR QUE SI TENER UNA PÁGINA WEB*/
+.container-tener-pagina{
+    margin: 3em 3em 1em ;}
+
+    .caja-razon-gral{
+        width: 27%;
+        padding: 2em;}
+
+        .caja-razon{
+            padding-top: .7em;
+            font-size: 1em;
+            height: 2em;}
+
+            .caja-razon p, li{margin-top: .2em;}
+
+        .description{
+            padding: 2em;
+            height: 35vh;
+            font-size: .8em;}
+
 /* ?CONFIGURACION BUTTON */
     button{
         width: 12em;
@@ -244,6 +356,26 @@
                 bottom: 5%;
                 left: 25%;}
 
+/*?POR QUE SI TENER UNA PÁGINA WEB*/
+.container-tener-pagina{
+    margin: 1em 1em 1em ;}
+
+    .caja-razon-gral{
+        width: 35%;
+        padding: 2em;}
+
+        .caja-razon{
+            padding-top: .7em;
+            font-size: 1em;
+            height: 2em;}
+
+            .caja-razon p, li{margin-top: .2em;}
+
+        .description{
+            padding: 2em;
+            height: 40vh;
+            font-size: .8em;}
+
 /* ?CONFIGURACION BUTTON */
     button{
         width: 12em;
@@ -273,7 +405,7 @@
 
         .pack{
             width: 35%;
-            height: 40vh;
+            height: 45vh;
             margin: 1em;
             padding: 1em;}
 
@@ -292,6 +424,26 @@
                 font-size: .7em;
                 bottom: 5%;
                 left: 25%;}
+
+/*?POR QUE SI TENER UNA PÁGINA WEB*/
+.container-tener-pagina{
+    margin: 1em 1em 1em ;}
+
+    .caja-razon-gral{
+        width: 40%;
+        padding: 2em;}
+
+        .caja-razon{
+            padding-top: .7em;
+            font-size: 1em;
+            height: 2em;}
+
+            .caja-razon p, li{margin-top: .2em;}
+
+        .description{
+            padding: 2em;
+            height: 35vh;
+            font-size: .8em;}
 
 /* ?CONFIGURACION BUTTON */
     button{
@@ -321,7 +473,7 @@
     .service-pack{margin: 3em 3em 1em ;}
 
         .pack{
-            width: 35%;
+            width: 36%;
             height: 50vh;
             margin: 1em;
             padding: 1em;}
@@ -334,7 +486,7 @@
 
             .pack p{
                 padding: 0em;
-                font-size: .8em;}
+                font-size: .75em;}
 
             .pack button{
                 width: 50%;
@@ -342,59 +494,28 @@
                 bottom: 5%;
                 left: 25%;}
 
-/* ?CONFIGURACION BUTTON */
-    button{
-        width: 12em;
-        font-size: .8em;
-        padding: .8em;}
+/*?POR QUE SI TENER UNA PÁGINA WEB*/
+.container-tener-pagina{
+    margin: 1em 1em 1em ;}
 
-}
+    .caja-razon-gral{
+        width: 40%;
+        padding: 2em;}
 
-/*? VERSIÒN MÓVIL */
-@media (max-width: 671px){
+        .caja-razon{
+            padding-top: .6em;
+            font-size: .9em;
+            height: 2em;}
 
-    .inicio{
-        padding: 1.8em 2em 0em 1.8em;}
+            .caja-razon p, li{margin-top: .2em;}
 
-    h1{
-        margin-top: .9em;
-        margin-bottom: 1.3em;
-        font-size: 2em;}
-
-    .servicio h2{font-size: 1.5em;}
-
-        .servicio p{
-            margin-top: .6em;
-            font-size: 1.3em;}
-
-    /* ?SERVICE */
-    .service-pack{margin: 2em 2em 1em ;}
-
-        .pack{
-            width: 50%;
-            height: 50vh;
-            margin: 1em;
-            padding: 1em;}
-
-            .material-symbols-outlined {font-size: 3em;}
-
-            .pack h3{
-                margin-bottom: .8em;
-                font-size: 1em;}
-
-            .pack p{
-                padding: 0em;
-                font-size: .9em;}
-
-            .pack button{
-                width: 50%;
-                font-size: .7em;
-                bottom: 5%;
-                left: 25%;}
+        .description{
+            padding: 2em;
+            height: 35vh;
+            font-size: .75em;}
 
 /* ?CONFIGURACION BUTTON */
     button{
-        margin-top: 12em;
         width: 12em;
         font-size: .8em;
         padding: .8em;}
@@ -425,7 +546,7 @@
 
         .pack{
             width: 90%;
-            height: 40vh;
+            height: 53vh;
             margin: 1em;
             padding: 1em;}
 
@@ -444,6 +565,26 @@
                 font-size: .7em;
                 bottom: 5%;
                 left: 25%;}
+
+/*?POR QUE SI TENER UNA PÁGINA WEB*/
+.container-tener-pagina{
+    margin: 1em 1em 1em ;}
+
+    .caja-razon-gral{
+        width: 90%;
+        padding: 2em;}
+
+        .caja-razon{
+            padding-top: .6em;
+            font-size: .9em;
+            height: 2em;}
+
+            .caja-razon p, li{margin-top: .2em;}
+
+        .description{
+            padding: 2em;
+            height: 40vh;
+            font-size: .8em;}
 
 /* ?CONFIGURACION BUTTON */
     button{
@@ -498,6 +639,26 @@
                 bottom: 5%;
                 left: 25%;}
 
+/*?POR QUE SI TENER UNA PÁGINA WEB*/
+.container-tener-pagina{
+    margin: 1em 1em 1em ;}
+
+    .caja-razon-gral{
+        width: 95%;
+        padding: 1em;}
+
+        .caja-razon{
+            padding-top: .5em;
+            font-size: .8em;
+            height: 2em;}
+
+            .caja-razon p, li{margin-top: .2em;}
+
+        .description{
+            padding: 1em;
+            height: 45vh;
+            font-size: .8em;}
+
 /* ?CONFIGURACION BUTTON */
     button{
         margin-top: 12em;
@@ -506,6 +667,7 @@
         padding: .8em;}
 
 }
+
 
 /*! HEIGHT*/
 /*? VERSIÒN MÓVIL */
@@ -550,6 +712,26 @@
                 bottom: 5%;
                 left: 25%;}
 
+/*?POR QUE SI TENER UNA PÁGINA WEB*/
+.container-tener-pagina{
+    margin: 1em 1em 1em ;}
+
+    .caja-razon-gral{
+        width: 95%;
+        padding: 1em;}
+
+        .caja-razon{
+            padding-top: .5em;
+            font-size: .8em;
+            height: 2em;}
+
+            .caja-razon p, li{margin-top: .2em;}
+
+        .description{
+            padding: 1em;
+            height: 50vh;
+            font-size: .8em;}
+
 /* ?CONFIGURACION BUTTON */
     button{
         margin-top: 12em;
@@ -570,7 +752,9 @@
         margin-bottom: 1.3em;
         font-size: 2em;}
 
-    .servicio h2{font-size: 1.3em;}
+    .servicio h2{
+        margin-top: 2em;
+        font-size: 1.3em;}
 
         .servicio p{
             margin-top: .6em;
@@ -600,6 +784,26 @@
                 font-size: .7em;
                 bottom: 5%;
                 left: 25%;}
+
+/*?POR QUE SI TENER UNA PÁGINA WEB*/
+.container-tener-pagina{
+    margin: 1em 1em 1em ;}
+
+    .caja-razon-gral{
+        width: 95%;
+        padding: 1em;}
+
+        .caja-razon{
+            padding-top: .5em;
+            font-size: .8em;
+            height: 2em;}
+
+            .caja-razon p, li{margin-top: .2em;}
+
+        .description{
+            padding: 1em;
+            height: 60vh;
+            font-size: .7em;}
 
 /* ?CONFIGURACION BUTTON */
     button{
